@@ -3,22 +3,40 @@ import Field from "../common/Field";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../../hook/useAuth";
 import { toast } from "react-toastify";
+import axios from "axios";
 
 const LoginForm = () => {
   const {
     register,
     handleSubmit,
     formState: { errors },
+    setError,
   } = useForm();
   const navigate = useNavigate();
   const { setAuth } = useAuth();
 
-  const submitForm = (fromData) => {
-    const user = { ...fromData };
-    setAuth({ user });
-    navigate("/");
-    toast.success("Login Successfully");
-    // console.log(fromData, "fromData");
+  const submitForm = async (formData) => {
+    try {
+      const response = await axios.post(
+        `${import.meta.env.VITE_SERVER_BASE_URL}/auth/login`,
+        formData
+      );
+      if (response.status === 200) {
+        const { user, token } = response.data;
+        if (token) {
+          const authToken = token?.token;
+          const refreshToken = token?.refreshToken;
+          setAuth({ user, authToken, refreshToken });
+          navigate("/me");
+        }
+      }
+    } catch (error) {
+      console.log(error, "erros");
+      setError("root.random", {
+        type: "random",
+        message: `User with email ${formData.email} is not found`,
+      });
+    }
   };
 
   return (
