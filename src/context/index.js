@@ -2,4 +2,6 @@ import { createContext } from "react";
 
 const AuthContext = createContext();
 
-export { AuthContext };
+const ProfileContext = createContext();
+
+export { AuthContext, ProfileContext };
