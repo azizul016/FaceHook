@@ -1,5 +1,5 @@
-import auth_illustration from "./../../assets/images/auth_illustration.png";
-import LoginForm from "../auth/LoginForm";
+import LoginForm from "../Component/auth/LoginForm";
+import auth_illustration from "./../assets/images/auth_illustration.png";
 import { Link } from "react-router-dom";
 
 export default function LoginPage() {

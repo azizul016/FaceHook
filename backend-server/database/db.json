@@ -528,8 +528,9 @@
       "password": "$2b$08$Oe1UYArOqe8QZHjzfIc/6es1Zw674fTsDRatbMoLc0evI5fDoosNC",
       "firstName": "Saad",
       "lastName": "Hasan",
-      "avatar": null,
-      "email": "a@gmail.com"
+      "avatar": "uploads/avatar/avatar-1717436221686-421024112.jpg",
+      "email": "a@gmail.com",
+      "bio": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,"
     }
   ]
 }

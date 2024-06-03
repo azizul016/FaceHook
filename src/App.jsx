@@ -1,13 +1,13 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import HomePage from "./Component/pages/HomePage";
-import LoginPage from "./Component/pages/LoginPage";
-import ProfilePage from "./Component/pages/ProfilePage";
-import RegisterPage from "./Component/pages/RegisterPage";
-import NotFoundPage from "./Component/pages/NotFoundPage";
+import LoginPage from "./pages/LoginPage";
+import ProfilePage from "./pages/ProfilePage";
+import RegisterPage from "./pages/RegisterPage";
+import NotFoundPage from "./pages/NotFoundPage";
 import PrivateRoutes from "./routes/PrivateRoutes";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import HomePage from "./pages/HomePage";
 
 function App() {
   // const isOnline = useOnlineStatus();

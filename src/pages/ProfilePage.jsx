@@ -1,9 +1,10 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect } from "react";
-import useAxios from "../../hook/useAxios";
-import { useAuth } from "../../hook/useAuth";
-import { useProfile } from "../../hook/useProfile";
-import { actions } from "../../action";
+import { useProfile } from "../hook/useProfile";
+import { useAuth } from "../hook/useAuth";
+import useAxios from "../hook/useAxios";
+import { actions } from "../action";
+import ProfileInfo from "../Component/profile/ProfileInfo";
 
 const ProfilePage = () => {
   const { state, dispatch } = useProfile();
@@ -39,7 +40,7 @@ const ProfilePage = () => {
   }
   return (
     <>
-      <h1>THis is profile page {state?.user?.firstName}</h1>
+      <ProfileInfo />
     </>
   );
 };
