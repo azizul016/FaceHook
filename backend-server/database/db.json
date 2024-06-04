@@ -62,9 +62,7 @@
           }
         }
       ],
-      "likes": [
-        "6fd3ed42-2275-4d5f-a436-e5a3bf586c56"
-      ],
+      "likes": ["6fd3ed42-2275-4d5f-a436-e5a3bf586c56"],
       "createAt": "2024-02-24T12:17:09.169Z"
     },
     {
@@ -109,9 +107,7 @@
           }
         }
       ],
-      "likes": [
-        "6fd3ed42-2275-4d5f-a436-e5a3bf586c56"
-      ],
+      "likes": ["6fd3ed42-2275-4d5f-a436-e5a3bf586c56"],
       "createAt": "2024-02-24T12:18:21.686Z"
     },
     {
@@ -400,9 +396,7 @@
           }
         }
       ],
-      "likes": [
-        "6fd3ed42-2275-4d5f-a436-e5a3bf586c56"
-      ],
+      "likes": ["6fd3ed42-2275-4d5f-a436-e5a3bf586c56"],
       "createAt": "2024-02-25T06:59:36.184Z"
     },
     {
@@ -474,6 +468,15 @@
       "bio": "Saad is an excellent member of LWS who keeps himself updated with technology and stays relevant. He is a tech enthusiast and does not hesitate to help developers in need."
     },
     {
+      "id": "6fd3ed42-2275-4d5f-a436-e5a3bf586c56",
+      "password": "12345678",
+      "firstName": "Saad",
+      "lastName": "Hasan",
+      "avatar": "uploads/avatar/avatar-1708849386635-121791126.png",
+      "email": "a@mail.com",
+      "bio": "Saad is an excellent member of LWS who keeps himself updated with technology and stays relevant. He is a tech enthusiast and does not hesitate to help developers in need."
+    },
+    {
       "id": "1aeef0f0-77ba-456b-8b5b-d4145a9b5410",
       "password": "$2b$08$Ppzu84hycImxTC6C7jAuGOs6fNBf4z7RJ7nqNldd/Lcj5JQaegmBK",
       "firstName": "Sumit",
@@ -528,7 +531,7 @@
       "password": "$2b$08$Oe1UYArOqe8QZHjzfIc/6es1Zw674fTsDRatbMoLc0evI5fDoosNC",
       "firstName": "Saad",
       "lastName": "Hasan",
-      "avatar": "uploads/avatar/avatar-1717436221686-421024112.jpg",
+      "avatar": "uploads/avatar/avatar-1717517862635-330557615.jpg",
       "email": "a@gmail.com",
       "bio": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,"
     }
