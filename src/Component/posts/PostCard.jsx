@@ -11,7 +11,7 @@ const PostCard = ({ post }) => {
 
       <PostBody poster={post?.image} content={post?.content} />
 
-      <PostAction postId={post?.id} commentCount={post?.comments?.length} />
+      <PostAction post={post} commentCount={post?.comments?.length} />
       <PostComments post={post} />
     </article>
   );

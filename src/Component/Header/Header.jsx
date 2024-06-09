@@ -1,6 +1,6 @@
 import brandLogo from "./../../assets/images/logo.svg";
 import homeIcon from "./../../assets/icons/home.svg";
-import notification from "./../../assets/icons/notification.svg";
+// import notification from "./../../assets/icons/notification.svg";
 import avatar_1 from "./../../assets/images/avatars/avatar_1.png";
 import { Link } from "react-router-dom";
 import Logout from "../auth/Logout";

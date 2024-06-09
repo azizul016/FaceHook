@@ -13,6 +13,7 @@ const useAxios = () => {
     const requestIntercept = api.interceptors.request.use(
       (config) => {
         const authToken = auth?.authToken;
+        // console.log(authToken, "authtoken");
         if (authToken) {
           config.headers.Authorization = `Bearer ${authToken}`;
         }
@@ -30,7 +31,7 @@ const useAxios = () => {
       (response) => response,
       async (error) => {
         const originalRequest = error.config;
-        console.log(originalRequest, "original request");
+        // console.log(originalRequest, "original request");
         // If the error status is 401 and there is no originalRequest._retry flag,
         // it means the token has expired and we need to refresh it
         if (error.response.status === 401 && !originalRequest._retry) {
@@ -43,7 +44,7 @@ const useAxios = () => {
             );
 
             const { token } = response.data;
-            console.log(`New token ${token}`);
+            // console.log(`New token ${token}`);
             setAuth({ ...auth, authToken: token });
 
             //retry the original request with the new token

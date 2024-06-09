@@ -1,7 +1,44 @@
+import { useEffect, useReducer } from "react";
+import { postInitialState, postReducer } from "../reducers/PostReducer";
+import { actions } from "../action";
+import PostList from "../Component/posts/PostList";
+import useAxios from "../hook/useAxios";
+
 function HomePage() {
+  const { api } = useAxios();
+  const [state, dispatch] = useReducer(postReducer, postInitialState);
+  useEffect(() => {
+    dispatch({ type: actions.post.DATA_FETCHING });
+    const fetchPost = async () => {
+      try {
+        const response = await api.get(
+          `${import.meta.env.VITE_SERVER_BASE_URL}/posts`
+        );
+        if (response.status === 200) {
+          dispatch({
+            type: actions.post.DATA_FETCHED,
+            data: response.data,
+          });
+        }
+      } catch (error) {
+        console.log(error, "home page error");
+        dispatch({ type: actions.post.DATA_FETCH_ERROR, error: error.message });
+      }
+    };
+    fetchPost();
+  }, []);
+
+  if (state?.loading) {
+    return <div> We are working...</div>;
+  }
+
+  if (state?.error) {
+    return <div> Error in fatching posts {state?.error?.message}</div>;
+  }
+
   return (
     <div>
-      <h2 className="text-3xl">HomePage</h2>
+      <PostList posts={state?.posts} />
     </div>
   );
 }

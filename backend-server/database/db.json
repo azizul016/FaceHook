@@ -62,7 +62,9 @@
           }
         }
       ],
-      "likes": ["6fd3ed42-2275-4d5f-a436-e5a3bf586c56"],
+      "likes": [
+        "6fd3ed42-2275-4d5f-a436-e5a3bf586c56"
+      ],
       "createAt": "2024-02-24T12:17:09.169Z"
     },
     {
@@ -105,9 +107,52 @@
             "name": "Saad Hasan",
             "avatar": "uploads/avatar/avatar-1708789609571-36760872.jpeg"
           }
+        },
+        {
+          "id": "f4ff93dc-b321-4172-a3b0-1ccaaba107db",
+          "comment": "This is demo",
+          "createdAt": "2024-06-09T17:54:10.910Z",
+          "author": {
+            "id": "52f90909-5a2a-49b4-ab56-fc37e21f814b",
+            "name": "Azizul Haque",
+            "avatar": "uploads/avatar/avatar-1717954200709-777644378.jpg"
+          }
+        },
+        {
+          "id": "81f29e88-a08a-4583-bccc-14bf9456c95b",
+          "comment": "This is demo",
+          "createdAt": "2024-06-09T17:54:14.075Z",
+          "author": {
+            "id": "52f90909-5a2a-49b4-ab56-fc37e21f814b",
+            "name": "Azizul Haque",
+            "avatar": "uploads/avatar/avatar-1717954200709-777644378.jpg"
+          }
+        },
+        {
+          "id": "c5d4bd7d-7ff5-460a-b06f-6964bb110583",
+          "comment": "This is demo",
+          "createdAt": "2024-06-09T17:54:17.839Z",
+          "author": {
+            "id": "52f90909-5a2a-49b4-ab56-fc37e21f814b",
+            "name": "Azizul Haque",
+            "avatar": "uploads/avatar/avatar-1717954200709-777644378.jpg"
+          }
+        },
+        {
+          "id": "9f0c49bb-33fc-4463-83ce-965cfb4c28cd",
+          "comment": "This is demo",
+          "createdAt": "2024-06-09T17:54:37.700Z",
+          "author": {
+            "id": "52f90909-5a2a-49b4-ab56-fc37e21f814b",
+            "name": "Azizul Haque",
+            "avatar": "uploads/avatar/avatar-1717954200709-777644378.jpg"
+          }
         }
       ],
-      "likes": ["6fd3ed42-2275-4d5f-a436-e5a3bf586c56"],
+      "likes": [
+        "6fd3ed42-2275-4d5f-a436-e5a3bf586c56",
+        "52f90909-5a2a-49b4-ab56-fc37e21f814b"
+      ],
       "createAt": "2024-02-24T12:18:21.686Z"
     },
     {
@@ -179,6 +224,16 @@
             "id": "6fd3ed42-2275-4d5f-a436-e5a3bf586c56",
             "name": "Saad Hasan",
             "avatar": "uploads/avatar/avatar-1708789609571-36760872.jpeg"
+          }
+        },
+        {
+          "id": "e7b31f07-9ead-4359-b8bf-84bac9581ed9",
+          "comment": "He is not a good boy",
+          "createdAt": "2024-06-09T17:55:59.306Z",
+          "author": {
+            "id": "52f90909-5a2a-49b4-ab56-fc37e21f814b",
+            "name": "Azizul Haque",
+            "avatar": "uploads/avatar/avatar-1717954200709-777644378.jpg"
           }
         }
       ],
@@ -396,7 +451,9 @@
           }
         }
       ],
-      "likes": ["6fd3ed42-2275-4d5f-a436-e5a3bf586c56"],
+      "likes": [
+        "6fd3ed42-2275-4d5f-a436-e5a3bf586c56"
+      ],
       "createAt": "2024-02-25T06:59:36.184Z"
     },
     {
@@ -460,11 +517,11 @@
   "users": [
     {
       "id": "6fd3ed42-2275-4d5f-a436-e5a3bf586c56",
-      "password": "$2b$08$t5Aar/0hgHTMdCeLtn3KhOlWDVIAHcFUTkRPeWASPhbYAea5kxKvW",
       "firstName": "Saad",
+      "password": "12345678",
       "lastName": "Hasan",
       "avatar": "uploads/avatar/avatar-1708849386635-121791126.png",
-      "email": "saadh392@mail.com",
+      "email": "a@gmail.com",
       "bio": "Saad is an excellent member of LWS who keeps himself updated with technology and stays relevant. He is a tech enthusiast and does not hesitate to help developers in need."
     },
     {
@@ -534,6 +591,15 @@
       "avatar": "uploads/avatar/avatar-1717517862635-330557615.jpg",
       "email": "a@gmail.com",
       "bio": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,"
+    },
+    {
+      "id": "52f90909-5a2a-49b4-ab56-fc37e21f814b",
+      "password": "$2b$08$ZZ8mLTtCJDzrxR77I960W.U5BftocLOOp1JiYSh.GI3My1SxnWkyq",
+      "firstName": "Azizul",
+      "lastName": "Haque",
+      "avatar": "uploads/avatar/avatar-1717954200709-777644378.jpg",
+      "email": "haqueazizul789@gmail.com",
+      "bio": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making"
     }
   ]
 }
