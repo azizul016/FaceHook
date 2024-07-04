@@ -26,6 +26,30 @@ const postReducer = (state, action) => {
         loading: false,
         error: actions.error,
       };
+
+    case actions.post.DATA_CREATED: {
+      return {
+        ...state,
+        loading: false,
+        posts: [...state.posts, action.data],
+      };
+    }
+
+    case actions.post.POST_DELETED: {
+      return {
+        ...state,
+        loading: false,
+        posts: state.posts.filter((item) => item.id !== action.data),
+      };
+    }
+
+    case actions.post.DATA_EDITED: {
+      return {
+        ...state,
+        loading: false,
+        user: action.data,
+      };
+    }
     case actions.post.POST_COMMENTED: {
       return {
         ...state,

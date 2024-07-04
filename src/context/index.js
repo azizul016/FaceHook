@@ -4,4 +4,6 @@ const AuthContext = createContext();
 
 const ProfileContext = createContext();
 
-export { AuthContext, ProfileContext };
+const PostContext = createContext();
+
+export { AuthContext, ProfileContext, PostContext };
